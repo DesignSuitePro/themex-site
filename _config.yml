@@ -13,10 +13,13 @@ title_separator          : "-"
 name                     : "ThemeX"
 description              : ""
 url                      : https://themex.scaleableprofits.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : / # the subpath of your site, e.g. "/blog"
+baseurl                  :  # the subpath of your site, e.g. "/blog"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+minimal_mistakes_skin    : "air"
+head_scripts:
+  - /assets/js/site.js
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
   disqus:

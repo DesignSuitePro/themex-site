@@ -3,17 +3,14 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Install"
-    url: /install
+  - title: "Buy"
+    url: /buy
+
+  - title: "Update"
+    url: /update
 
   - title: "Guide"
     url: /guide
-
-  - title: "Hooks"
-    url: /hooks
-
-  - title: "Variables"
-    url: /variables
 
   - title: "Changelog"
     url: /changelog

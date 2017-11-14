@@ -9,6 +9,7 @@ permalink: /changelog
 ## [2.0.0]
 
 ### Added
+- Added option to set the value percentage sent to facebook
 - Option for 2/5 product section
 - Product hiding with tag "hide"
 - Option to hide the search bar

@@ -2,12 +2,14 @@
 title: "ThemeX"
 layout: splash
 sitemap: false
-permalink: /
+permalink: 
 header:
-  overlay_image: /assets/images/unsplash-image-1.jpg
-  overlay_filter: rgba(0, 0, 0, 0.5)
-  cta_label: "More Info"
-  cta_url: "https://unsplash.com"
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  cta_label: "Download"
+  cta_url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 # test
