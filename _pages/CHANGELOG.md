@@ -5,9 +5,26 @@ sitemap: false
 permalink: /changelog
 
 ---
+
 ## [2.0.0]
+
+### Added
+- Option for 2/5 product section
+- Product hiding with tag "hide"
+- Option to hide the search bar
+- Option to Disable search page
+- Option to make the AddToCart Button Follow Scroll on Mobile
+- Option to add Update button on the cart page
+- Best Selling Page Hidden now
+- New License System
+- New Facebook Tracking Code
+
 ### Changed
 - Fixed bug with swatches freezing when using quotation marks (")
+- Fixed bug with money format
+- Removed old pixel Implementation
+- License and Tracking sections merged in the General section
+- Removed old "FastClick" script no longer needed
 
 ## [1.8.0]
 
