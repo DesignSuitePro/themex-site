@@ -1,0 +1,72 @@
+# main links links
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Install"
+    url: /install
+
+  - title: "Guide"
+    url: /guide
+
+  - title: "Hooks"
+    url: /hooks
+
+  - title: "Variables"
+    url: /variables
+
+  - title: "Changelog"
+    url: /changelog
+
+home-sidebar:
+  - title: "Updating"
+    url: \#updating
+    children:
+      - title: "How to look for theme version"
+        url: \#how-to-look-for-theme-version
+
+  - title: "Hooks"
+    url: \#hooks
+
+  - title: "Variables"
+    url: \#variables-metafields
+
+  - title: "Setup"
+    url: \#setup
+    children:
+      - title: "Facebook Pixel"
+        url: \#facebook-pixel-conversion
+
+      - title: "Hide Paypal Button on Checkout"
+        url: \#hide-paypal-button-on-checkout-page
+
+hooks-sidebar:
+  - title: "Naming"
+    url: /hooks#naming
+  - title: Theme
+    url: /hooks#theme
+  - title: Product
+    url: /hooks#product
+  - title: Collection
+    url: /hooks#collection
+  - title: "Product Grid Item"
+    url: /hooks#product-grid-item
+
+variables-sidebar:
+  - title: Introduction
+    url: /variables#introduction
+  - title: General
+    url: /variables#general
+  - title: Header Section
+    url: /variables#header-section
+  - title: Footer Section
+    url: /variables#footer-section
+  - title: Collection Page
+    url: /variables#collection-page
+  - title: Product Page
+    url: /variables#product-page
+    chlidren:
+      - title: Upsell
+        url: \#upsell
+      - title: Timer
+        url: \#timer
