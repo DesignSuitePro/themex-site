@@ -6,36 +6,36 @@ main:
   - title: "Buy"
     url: /buy
 
-  - title: "Update"
-    url: /update
-
   - title: "Guide"
     url: /guide
+
+  - title: "Update"
+    url: /update
 
   - title: "Changelog"
     url: /changelog
 
 home-sidebar:
   - title: "Updating"
-    url: \#updating
+    url: /guide#updating
     children:
       - title: "How to look for theme version"
-        url: \#how-to-look-for-theme-version
+        url: /guide#how-to-look-for-theme-version
 
   - title: "Hooks"
-    url: \#hooks
+    url: /guide#hooks
 
   - title: "Variables"
-    url: \#variables-metafields
+    url: /guide#variables-metafields
 
   - title: "Setup"
-    url: \#setup
+    url: /guide#setup
     children:
       - title: "Facebook Pixel"
-        url: \#facebook-pixel-conversion
+        url: /guide#facebook-pixel-conversion
 
       - title: "Hide Paypal Button on Checkout"
-        url: \#hide-paypal-button-on-checkout-page
+        url: /guide#hide-paypal-button-on-checkout-page
 
 hooks-sidebar:
   - title: "Naming"

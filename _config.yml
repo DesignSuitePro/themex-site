@@ -19,6 +19,7 @@ teaser                   : # filename of teaser fallback teaser image placed in 
 words_per_minute         : 200
 minimal_mistakes_skin    : "air"
 head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
   - /assets/js/site.js
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
@@ -151,9 +152,9 @@ kramdown:
 
 
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

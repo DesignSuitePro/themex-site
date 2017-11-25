@@ -16,3 +16,19 @@ $footer-background-color: #141313 !default;
 .page__footer {
   color: #BBB !important; // override
 }
+.page__hero--overlay{
+  background: linear-gradient(to right bottom, rgba(23, 29, 43, 0.5), rgba(199, 206, 225,0.1)), linear-gradient(to right top, rgba(97, 67, 133, 0.8), rgba(81, 99, 149, 0.6)), url('/assets/images/dark-triangles.png') !important;
+}
+.masthead, .greedy-nav{
+  background-color: #FFF;
+}
+form #step2 label{
+  display: inline-block;
+  width: 49%;
+}
+form .info{
+  font-size:0.8em;
+}
+form #step2{
+  display:none;
+}

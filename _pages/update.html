@@ -1,0 +1,39 @@
+---
+title: "Update Your Theme"
+layout: single
+excerpt: "Update Your ThemeX"
+sitemap: false
+permalink: /update
+---
+
+<form id="form-update">
+  <p id="message"></p>
+
+  <fieldset id="step1" class="">
+    <label>Store URL <span class="info">(<em>example.myshopify.com</em>)</span> <input type="text" id="store" name="store"></label>
+    <label>API Password <span class="info">(<a href="">How to get your Api Password</a>)</span><input type="text" id="api_password" name="api_password"></label>
+
+    <label>License Key <input type="text" id="license_key" name="license_key"></label>
+    <label><input class="btn--info btn--large btn" id="button-next" value="Next" type="button" /></label>
+  </fieldset>
+  <fieldset id="step2" class="form-inline">
+
+    <div class="notice--warning">
+       <em>If you choose to update, make sure to make a backup first, this step will overwrite any changes made to the theme (<strong>Your settings will be preserved</strong>)</em>
+    </div>
+
+    <div class="">
+
+    <label>Theme: <select id="theme_id" name="theme_id"><option value="">Create New</option></select></label>
+
+    <label>Version: <select id="version">
+      <option>2.0</option>
+    </select></label>
+
+    </div>
+
+    <div style="margin-top:1em;">
+    <label><input class="btn--success btn--large btn" value="Update" type="button" /></label>
+    </div>
+  </fieldset>
+</form>
