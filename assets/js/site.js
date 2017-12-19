@@ -57,8 +57,7 @@ $(function(){
 
   function update_theme(store, api_password, theme_id, version){
     console.log("update_theme");
-    let url = "https://scaleableprofits.com/themex/theme.php";
-    url = "http://localhost:3000/theme/update";
+    let url = "https://islkq4mpv9.execute-api.us-east-1.amazonaws.com/dev/theme/update";
     return $.ajax({
       method: "post",
         url: url,
@@ -81,7 +80,7 @@ $(function(){
   function install_theme(store, api_password, version){
     console.log("install_theme");
     let url = "https://scaleableprofits.com/themex/theme.php";
-    url = "http://localhost:3000/theme/install";
+    url = "https://islkq4mpv9.execute-api.us-east-1.amazonaws.com/dev/theme/install_script";
     return $.ajax({
       method: "post",
         url: url,
@@ -107,7 +106,7 @@ $(function(){
 
   function install_script(store, api_password, theme_id){
     console.log("install_script");
-    let url = "http://localhost:3000/theme/install_script";
+    let url = "https://islkq4mpv9.execute-api.us-east-1.amazonaws.com/dev/theme/install_script";
     return $.ajax({
       method: "post",
       url: url,
