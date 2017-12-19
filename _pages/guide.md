@@ -6,23 +6,33 @@ permalink: /guide
 sidebar:
   nav: "home-sidebar"
 ---
+
 ## Updating
 
 Shopify doesn't offer any way to update themes yet, and while ThemeX is meant to be updateable there are a few points to consider:
 
-1. We need a private App **API key** setup with **theme** privileges in order to be able to update the theme for you. (You only need to provide this once)
+1. We need a private App **[API key](#api-key)** setup with [**theme** and **script** privileges](#api-key) in order to be able to update the theme for you. 
 2. Any Changes made directly to the theme files will be overwritten once updated.
 
 For those two reasons we do not update any themes without prior request.
 Using the [hooks](#hooks) feature is the best way to preserve changes after updates.
 {: .notice--info}
 
+[Update Now](/update){: .btn .btn--large .btn--success}
+
+### API Key
+To create or retrieve your API key you need to go to:
+Apps -> Manage private apps (at the bottom) -> Create a new private app
+
+Name it ThemeX and make sure to have these 2 permissions set to read & write 
+
+![API Permissions](assets/images/api_permissions.png)
 
 ### How to look for theme version
 
 On the theme customizer click Info at the top on the right sidebar.
 
-![ThemeX Version](images/themex-version.png)
+![ThemeX Version](assets/images/themex-version.png)
 
 
 
@@ -71,7 +81,7 @@ Once loaded just fill the fields and click save.
 
 Namespace is always "**themex**".
 
-![Shopify FD MetaField Creation](images/shopifyfd-metafields.png)
+![Shopify FD MetaField Creation](assets/images/shopifyfd-metafields.png)
 
 For a list of Variables available [click here](/ThemeX/variables).
 
@@ -87,46 +97,8 @@ Note: Make sure the Cart is set to Page and not modal or any other option.
 
 
 ### Facebook Pixel Conversion
-
-Do not forget to change XXXX to your own fb id.
-{: .notice--warning}
-
-{% raw %}
-```html
-<!-- Facebook Pixel Code -->
-{% if first_time_accessed %}
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', 'xxxxxxxxxxxx');
-
-var content_ids = []
-
-{% for line in checkout.line_items %}
-  productId = {{line.variant_id | json}};
-  content_ids.push(productId);
-{% endfor %}
-
-totalPrice = {{ checkout.total_price | money_without_currency }};
-fbq('track', 'Purchase', {
-   content_ids: content_ids,
-   value: totalPrice,
-   currency:'{{shop.currency}}',
-   content_type: 'product'
-});
-
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=xxxxxxxxxxx&ev=Purchase&cd[value]={{ checkout.total_price | money_without_currency }}&noscript=1"
-/></noscript>
-{% endif %}
-<!-- End Facebook Pixel Code -->
-```
-{% endraw %}
+No longer needed make sure to remove any previous code from the checkout section if you are using ThemeX.
+{: .notice--info}
 
 ### Hide Paypal Button on Checkout Page
 ```html

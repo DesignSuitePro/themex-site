@@ -5,7 +5,14 @@ sitemap: false
 permalink: /changelog
 
 ---
+## [2.0.2]
+- Fixed Product Customizer Issues
+- Updated Documentation Link
 
+## [2.0.1]
+- Fixed Hide Powered By
+- Fixed Money Format Issues
+- Verified Footer Text is Optional Now
 ## [2.0.0]
 
 ### Added

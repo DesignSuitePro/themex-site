@@ -3,8 +3,8 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Buy"
-    url: /buy
+  # - title: "Buy"
+  #   url: /buy
 
   - title: "Guide"
     url: /guide

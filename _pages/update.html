@@ -1,39 +1,58 @@
 ---
-title: "Update Your Theme"
+title: "Update/Install Your Theme"
 layout: single
 excerpt: "Update Your ThemeX"
 sitemap: false
 permalink: /update
 ---
 
+<p id="message"></p>
+
 <form id="form-update">
-  <p id="message"></p>
 
   <fieldset id="step1" class="">
     <label>Store URL <span class="info">(<em>example.myshopify.com</em>)</span> <input type="text" id="store" name="store"></label>
     <label>API Password <span class="info">(<a href="">How to get your Api Password</a>)</span><input type="text" id="api_password" name="api_password"></label>
 
-    <label>License Key <input type="text" id="license_key" name="license_key"></label>
-    <label><input class="btn--info btn--large btn" id="button-next" value="Next" type="button" /></label>
+    <label>
+
+      <input class="btn--info btn--large btn" id="button-next" value="Next" type="button" />
+
+      <div class="spinner">
+        <div class="spinner__item1"></div>
+        <div class="spinner__item2"></div>
+        <div class="spinner__item3"></div>
+        <div class="spinner__item4"></div>
+      </div>
+
+    </label>
   </fieldset>
   <fieldset id="step2" class="form-inline">
 
-    <div class="notice--warning">
-       <em>If you choose to update, make sure to make a backup first, this step will overwrite any changes made to the theme (<strong>Your settings will be preserved</strong>)</em>
-    </div>
-
     <div class="">
 
-    <label>Theme: <select id="theme_id" name="theme_id"><option value="">Create New</option></select></label>
+    <label>Theme: <select id="theme_id" name="theme_id"></select></label>
 
     <label>Version: <select id="version">
-      <option>2.0</option>
+      <option>2.0.1</option>
     </select></label>
 
     </div>
 
     <div style="margin-top:1em;">
-    <label><input class="btn--success btn--large btn" value="Update" type="button" /></label>
+    <div>
+      <input class="btn--success btn--large btn" id="button-update" value="Install" type="button" />
+      <input class="btn--success btn--large btn" id="button-script" value="Install Script" type="button" style="float:right;" />
+
+      <div class="spinner">
+        <div class="spinner__item1"></div>
+        <div class="spinner__item2"></div>
+        <div class="spinner__item3"></div>
+        <div class="spinner__item4"></div>
+      </div>
+      <span id="install-time-warning">Installing new can take up to 2 minutes</span>
+
+    </div>
     </div>
   </fieldset>
 </form>

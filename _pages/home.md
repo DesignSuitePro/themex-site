@@ -8,8 +8,8 @@ header:
   overlay_image: /assets/images/dark-triangles.png
   overlay_filter: rgba(0, 0, 0, 0.5)
   image_description: "Hello"
-  cta_label: "Buy Now"
-  cta_url: "https://unsplash.com"
+  # cta_label: "Buy Now"
+  # cta_url: "https://unsplash.com"
 excerpt: "The new Theme X version is here with **new features**, **bug fixes**, and **improvements** to make it easier than ever."
 feature_row:
   - image_path: /assets/images/ilya-pavlov-87438.jpg
