@@ -142,9 +142,12 @@ $(function(){
     if(data.updated_assets){
 
     }else{
-      if(!$("#theme_id option[value='"+data.data.theme.id+"']").length){
-        $("#theme_id").append($("<option value=\""+data.data.theme.id+"\">"+data.data.theme.name+" ("+data.data.theme.role+")</option>"));
-        $("#theme_id").val(data.data.theme.id);
+      if(data.data){
+        data = data.data;
+      }
+      if(!$("#theme_id option[value='"+data.theme.id+"']").length){
+        $("#theme_id").append($("<option value=\""+data.theme.id+"\">"+data.theme.name+" ("+data.theme.role+")</option>"));
+        $("#theme_id").val(data.theme.id);
       }
     }
 
