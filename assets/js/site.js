@@ -80,7 +80,7 @@ $(function(){
   function install_theme(store, api_password, version){
     console.log("install_theme");
     let url = "https://scaleableprofits.com/themex/theme.php";
-    url = "https://islkq4mpv9.execute-api.us-east-1.amazonaws.com/dev/theme/install_script";
+    url = "https://islkq4mpv9.execute-api.us-east-1.amazonaws.com/dev/theme/install";
     return $.ajax({
       method: "post",
         url: url,
