@@ -1,4 +1,4 @@
-j$(function(){
+$(function(){
   function ajax(options) {
     return new Promise(function(resolve, reject){$.ajax(options).then(resolve).catch(reject)});
   }
