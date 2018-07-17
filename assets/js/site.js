@@ -1,4 +1,4 @@
-$(function(){
+j$(function(){
   function ajax(options) {
     return new Promise(function(resolve, reject){$.ajax(options).then(resolve).catch(reject)});
   }
@@ -44,7 +44,7 @@ $(function(){
   function get_themes(store, api_password){
     return $.ajax({
       method: "post",
-      url: "https://scaleableprofits.com/themex/theme.php",
+      url: "https://designsuitepro.com/themex/theme.php",
       data: {
         action: "list",
         store: store,
@@ -79,7 +79,7 @@ $(function(){
 
   function install_theme(store, api_password, version){
     console.log("install_theme");
-    let url = "https://scaleableprofits.com/themex/theme.php";
+    let url = "https://designsuitepro.com/themex/theme.php";
     url = "https://islkq4mpv9.execute-api.us-east-1.amazonaws.com/dev/theme/install";
     return $.ajax({
       method: "post",
