@@ -217,6 +217,8 @@ $(function(){
     }
 
   }
+
+
   function script_submit(){
     let store = normalize_store_string($("#store").val());
     let api_password = $("#api_password").val();
@@ -234,6 +236,40 @@ $(function(){
     }
   }
 
+
+  function submit_form(name, email, store){
+    return $.ajax({
+      method: "post",
+      url: "https://designsuitepro.com/themex/theme.php",
+      data: {
+        action: "form",
+        name, email, store
+      },
+      dataType: "json"
+    });
+  }
+
+  function form_success(){
+    swal("Form Sent", "Form Sent Successfuly", "success");
+  }
+
+  function form_submit(){
+    let email = $("#email").val();
+    let name = $("#name").val();
+    let store = normalize_store_string($("#store").val());
+
+    if(store && name && email){
+      start_loading();
+      submit_form(name, email, store)
+        .then(form_success)
+        .catch(show_error)
+        .then(stop_loading);
+    }else{
+      show_error({statusText: "", responseJSON: {errors: "You need to pick a theme"}});
+    }
+
+  }
+
   $("#theme_id").change(function(e){
     if($(this).find("option:selected").val() === ""){
       $("#button-update").val("Install");
@@ -244,9 +280,12 @@ $(function(){
     }
 
   });
+
   $("#button-next").click(step1_submit);
   $("#button-update").click(step2_submit);
   $("#button-script").click(script_submit);
   $("#form-update").submit(function(e){e.preventDefault();return false;});
+
+  $("#button-send").click(form_submit);
 
 });
