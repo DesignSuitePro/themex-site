@@ -265,7 +265,7 @@ $(function(){
         .catch(show_error)
         .then(stop_loading);
     }else{
-      show_error({statusText: "", responseJSON: {errors: "You need to pick a theme"}});
+      show_error({statusText: "", responseJSON: {errors: "All fields are required"}});
     }
 
   }
