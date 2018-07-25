@@ -12,8 +12,8 @@ main:
   - title: "Update"
     url: /update
 
-  - title: "Changelog"
-    url: /changelog
+  # - title: "Changelog"
+  #   url: /changelog
 
 home-sidebar:
   - title: "Updating"

@@ -100,18 +100,24 @@ Note: Make sure the Cart is set to Page and not modal or any other option.
 No longer needed make sure to remove any previous code from the checkout section if you are using ThemeX.
 {: .notice--info}
 
-### Hide Paypal Button on Checkout Page
+### Hide Paypal Button on Checkout Page and Expand drawer on mobile
 ```html
 <script type="text/javascript">
 (function(fn){
-    var d = document;
-    (d.readyState == 'loading') ? d.addEventListener('DOMContentLoad', fn) : fn();
+(document.readyState == 'loading') ? document.addEventListener('DOMContentLoad', fn) : fn();
 })(function(){
-    document.getElementById("paypal-express-checkout-btn").style.visibility = "hidden";
-    var toHide = document.querySelectorAll('.alt-payment-list-container, .alternative-payment-separator');
-    for(var i = 0; i < toHide.length; i++){
-        toHide[i].style.display = 'none';
-    }
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+eventFire(document.getElementsByClassName("order-summary-toggle")[0], "click");
+var toHide = document.querySelectorAll('.alt-payment-list-container, .alternative-payment-separator');
+for(var i = 0; i < toHide.length; i++){ toHide[i].style.display = 'none'; }
 });
 </script>
 ```
