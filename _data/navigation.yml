@@ -17,20 +17,32 @@ main:
 
 home-sidebar:
   - title: "Updating"
-    url: /guide#updating
     children:
+      - title: Introduction
+        url: /guide#updating
+      - title: API KEY
+        url: /guide#api-key
       - title: "How to look for theme version"
         url: /guide#how-to-look-for-theme-version
 
   - title: "Hooks"
-    url: /guide#hooks
+    children:
+      - title: Introduction
+        url: /guide#hooks
+      - title: Hooks
+        url: /hooks
 
-  - title: "Variables"
-    url: /guide#variables-metafields
+  - title: "Variable Metafields"
+    children: 
+      - title: Introduction
+        url: /guide#variables-metafields
+      - title: List of Variables
+        url: /variables
 
   - title: "Setup"
-    url: /guide#setup
     children:
+      - title: Instructions
+        url: /guide#setup
       - title: "Facebook Pixel"
         url: /guide#facebook-pixel-conversion
 
