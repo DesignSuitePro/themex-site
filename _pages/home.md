@@ -1,5 +1,5 @@
 ---
-title: "ThemeX 2.0"
+title: "ThemeX 2.5"
 layout: splash
 sitemap: false
 permalink: /
