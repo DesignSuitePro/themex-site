@@ -20,14 +20,16 @@ guide-sidebar:
     children:
       - title: Introduction
       - url: /guide#general
-  - title: "Updating"
+
+  - title: "Setup"
     children:
-      - title: Introduction
-        url: /guide#updating
-      - title: API KEY
-        url: /guide#api-key
-      - title: "How to look for theme version"
-        url: /guide#how-to-look-for-theme-version
+      - title: Instructions
+        url: /guide#setup
+      - title: "Facebook Pixel"
+        url: /guide#facebook-pixel-conversion
+
+      - title: "Hide Paypal Button on Checkout"
+        url: /guide#hide-paypal-button-on-checkout-page
 
   - title: "Hooks"
     children:
@@ -43,15 +45,16 @@ guide-sidebar:
       - title: List of Variables
         url: /variables
 
-  - title: "Setup"
+  - title: "Updating"
     children:
-      - title: Instructions
-        url: /guide#setup
-      - title: "Facebook Pixel"
-        url: /guide#facebook-pixel-conversion
+      - title: Introduction
+        url: /guide#updating
+      - title: API KEY
+        url: /guide#api-key
+      - title: "How to look for theme version"
+        url: /guide#how-to-look-for-theme-version
 
-      - title: "Hide Paypal Button on Checkout"
-        url: /guide#hide-paypal-button-on-checkout-page
+
 
 hooks-sidebar:
   - title: "Naming"

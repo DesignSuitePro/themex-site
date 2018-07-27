@@ -11,33 +11,43 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bml_iHxcKBM?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## Updating
 
-Shopify doesn't offer any way to update themes yet, and while ThemeX is meant to be updateable there are a few points to consider:
+## Setup
 
-1. We need a private App **[API key](#api-key)** setup with [**theme** and **script** privileges](#api-key) in order to be able to update the theme for you. 
-2. Any Changes made directly to the theme files will be overwritten once updated.
+All settings are configurable globally via the theme customizer. For per product or per collection settings look at [variables](#variables-metadata).
 
-For those two reasons we do not update any themes without prior request.
-Using the [hooks](#hooks) feature is the best way to preserve changes after updates.
+
+### Skip Cart
+
+Note: Make sure the Cart is set to Page and not modal or any other option.
 {: .notice--info}
 
-[Update Now](/update){: .btn .btn--large .btn--success}
 
-### API Key
-To create or retrieve your API key you need to go to:
-Apps -> Manage private apps (at the bottom) -> Create a new private app
+### Facebook Pixel Conversion
+No longer needed make sure to remove any previous code from the checkout section if you are using ThemeX.
+{: .notice--info}
 
-Name it ThemeX and make sure to have these 2 permissions set to read & write 
-
-![API Permissions](assets/images/api_permissions.png)
-
-### How to look for theme version
-
-On the theme customizer click Info at the top on the right sidebar.
-
-![ThemeX Version](assets/images/themex-version.png)
-
+### Hide Paypal Button on Checkout Page and Expand drawer on mobile
+```html
+<script type="text/javascript">
+(function(fn){
+(document.readyState == 'loading') ? document.addEventListener('DOMContentLoad', fn) : fn();
+})(function(){
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+eventFire(document.getElementsByClassName("order-summary-toggle")[0], "click");
+var toHide = document.querySelectorAll('.alt-payment-list-container, .alternative-payment-separator');
+for(var i = 0; i < toHide.length; i++){ toHide[i].style.display = 'none'; }
+});
+</script>
+```
 
 
 
@@ -89,39 +99,31 @@ Namespace is always "**themex**".
 
 For a list of Variables available [click here](/variables).
 
-## Setup
 
-All settings are configurable globally via the theme customizer. For per product or per collection settings look at [variables](#variables-metadata).
+## Updating
 
+Shopify doesn't offer any way to update themes yet, and while ThemeX is meant to be updateable there are a few points to consider:
 
-### Skip Cart
+1. We need a private App **[API key](#api-key)** setup with [**theme** and **script** privileges](#api-key) in order to be able to update the theme for you. 
+2. Any Changes made directly to the theme files will be overwritten once updated.
 
-Note: Make sure the Cart is set to Page and not modal or any other option.
+For those two reasons we do not update any themes without prior request.
+Using the [hooks](#hooks) feature is the best way to preserve changes after updates.
 {: .notice--info}
 
+[Update Now](/update){: .btn .btn--large .btn--success}
 
-### Facebook Pixel Conversion
-No longer needed make sure to remove any previous code from the checkout section if you are using ThemeX.
-{: .notice--info}
+### API Key
+To create or retrieve your API key you need to go to:
+Apps -> Manage private apps (at the bottom) -> Create a new private app
 
-### Hide Paypal Button on Checkout Page and Expand drawer on mobile
-```html
-<script type="text/javascript">
-(function(fn){
-(document.readyState == 'loading') ? document.addEventListener('DOMContentLoad', fn) : fn();
-})(function(){
-function eventFire(el, etype){
-  if (el.fireEvent) {
-    el.fireEvent('on' + etype);
-  } else {
-    var evObj = document.createEvent('Events');
-    evObj.initEvent(etype, true, false);
-    el.dispatchEvent(evObj);
-  }
-}
-eventFire(document.getElementsByClassName("order-summary-toggle")[0], "click");
-var toHide = document.querySelectorAll('.alt-payment-list-container, .alternative-payment-separator');
-for(var i = 0; i < toHide.length; i++){ toHide[i].style.display = 'none'; }
-});
-</script>
-```
+Name it ThemeX and make sure to have these 2 permissions set to read & write 
+
+![API Permissions](assets/images/api_permissions.png)
+
+### How to look for theme version
+
+On the theme customizer click Info at the top on the right sidebar.
+
+![ThemeX Version](assets/images/themex-version.png)
+
