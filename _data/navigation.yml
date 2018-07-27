@@ -16,13 +16,18 @@ main:
   #   url: /changelog
 
 guide-sidebar:
-  - title: "General"
-    children:
-      - title: Introduction
-      - url: /guide#general
-
   - title: "Setup"
     children:
+      - title: General
+        url: /guide#general
+      - title: Colors
+        url: /guide#colors
+      - title: Colors
+        url: /guide#typography
+      - title: Header
+        url: /guide#header
+      - title: Footer
+        url: /guide#footer
       - title: Instructions
         url: /guide#setup
       - title: "Facebook Pixel"

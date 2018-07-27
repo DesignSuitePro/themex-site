@@ -6,14 +6,12 @@ permalink: /guide
 sidebar:
   nav: "guide-sidebar"
 ---
-## General
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bml_iHxcKBM?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 
 ## Setup
-
 All settings are configurable globally via the theme customizer. For per product or per collection settings look at [variables](#variables-metadata).
+
+### General
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bml_iHxcKBM?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Colors
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EUueWQtvr8k?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
