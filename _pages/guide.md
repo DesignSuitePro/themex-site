@@ -8,7 +8,7 @@ sidebar:
 ---
 ## General
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bml_iHxcKBM?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bml_iHxcKBM?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 ## Setup
@@ -16,16 +16,16 @@ sidebar:
 All settings are configurable globally via the theme customizer. For per product or per collection settings look at [variables](#variables-metadata).
 
 ### Colors
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EUueWQtvr8k?rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EUueWQtvr8k?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Typography
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SNcSEghoEYY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SNcSEghoEYY?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Header
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OsxyFn71T2o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OsxyFn71T2o?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Footer
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ghS1RIhOi-E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ghS1RIhOi-E?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Skip Cart
 
