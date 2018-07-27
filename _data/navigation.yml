@@ -15,7 +15,11 @@ main:
   # - title: "Changelog"
   #   url: /changelog
 
-home-sidebar:
+guide-sidebar:
+  - title: "General"
+    children:
+      - title: Introduction
+      - url: /guide#general
   - title: "Updating"
     children:
       - title: Introduction
