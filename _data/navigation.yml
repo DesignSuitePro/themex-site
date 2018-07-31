@@ -18,6 +18,8 @@ main:
 guide-sidebar:
   - title: "Setup"
     children:
+      - title: Instructions
+        url: /guide#setup
       - title: General
         url: /guide#general
       - title: Colors
@@ -28,11 +30,22 @@ guide-sidebar:
         url: /guide#header
       - title: Footer
         url: /guide#footer
-      - title: Instructions
-        url: /guide#setup
+      - title: Home Page
+        url: /guide#home-page
+      - title: Home Page
+        url: /guide#home-page
+      - title: Product Page A
+        url: /guide#product-page-a
+      - title: Product Page B
+        url: /guide#product-page-b
+      - title: Product Page C
+        url: /guide#product-page-c
+      - title: Collection Page & Cart Page
+        url: /guide#collection-page--cart-page
+      - title: Checkout
+        url: /guide#checkout
       - title: "Facebook Pixel"
         url: /guide#facebook-pixel-conversion
-
       - title: "Hide Paypal Button on Checkout"
         url: /guide#hide-paypal-button-on-checkout-page
 

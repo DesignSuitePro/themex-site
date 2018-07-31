@@ -25,6 +25,25 @@ All settings are configurable globally via the theme customizer. For per product
 ### Footer
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ghS1RIhOi-E?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+### Home Page
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hZ2AK3CJuus?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### Product Page A
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lNPOSA3aXyY?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### Product Page B
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vzIJxtgMGkU?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### Product Page C
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3BPPmxnK8Y?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+### Collection Page & Cart Page
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wEt7rngxIec?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### Checkout
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6n8kbo6mqc4?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Skip Cart
 
 Note: Make sure the Cart is set to Page and not modal or any other option.
